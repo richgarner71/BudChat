@@ -151,8 +151,8 @@ An endorsement of cannabis use
 A platform for sales or transactions
 
 
-Users should:
-
+_Users should:_
+_
 Consult healthcare professionals for medical questions
 
 Verify legal information with local authorities
@@ -160,9 +160,9 @@ Verify legal information with local authorities
 Comply with all applicable federal, state, and local laws
 
 Use cannabis responsibly and legally
+_
 
-
-The developers and operators of this chatbot are not responsible for:
+**The developers and operators of this chatbot are not responsible for:**
 
 User actions based on information provided
 
@@ -173,15 +173,17 @@ Medical outcomes or health effects
 Accuracy of third-party information
 
 
-Support
+**Support**
 For issues, questions, or feature requests:
 
 Open an issue on GitHub
+
 Contact: richgarner71@gmail.com
+
 Documentation: [https://docs.yourdomain.com](https://github.com/richgarner71/BudChat)
 
 
-Acknowledgments
+**Acknowledgments**
 
 OpenAI / Abacus.AI for LLM capabilities
 
@@ -192,9 +194,10 @@ React community for UI components
 Cannabis research community for educational content
 
 
-Version: 1.0.0
+**Version: 1.0.0
 Last Updated: 10/2025
-Maintained By: Rich Garner
+Maintained By: Rich Garner**
+
 
 
 
