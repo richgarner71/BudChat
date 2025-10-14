@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Example page showing Cannabis Chatbot Widget integration">
+  <title>Cannabis Chatbot Widget - Example Integration</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+      color: white;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.95;
+    }
+
+    main {
+      padding: 60px 40px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #4CAF50;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 12px;
+      border: 2px solid #e0e0e0;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      border-color: #4CAF50;
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .feature-card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .feature-card p {
+      font-size: 16px;
+      color: #666;
+      margin: 0;
+    }
+
+    .code-block {
+      background: #2d2d2d;
+      color: #f8f8f2;
+      padding: 24px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 20px 0;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .code-block code {
+      color: #f8f8f2;
+    }
+
+    .highlight {
+      background: #4CAF50;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background: #45a049;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    }
+
+    .cta-button:focus {
+      outline: 3px solid #2196F3;
+      outline-offset: 2px;
+    }
+
+    footer {
+      background: #f5f5f5;
+      padding: 40px;
+      text-align: center;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    footer p {
+      margin: 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .notice {
+      background: #fff3cd;
+      border: 2px solid #ffc107;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .notice p {
+      margin: 0;
+      color: #856404;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      main {
+        padding: 40px 20px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌿 Cannabis Chatbot Widget</h1>
+      <p>AI-powered cannabis education and information assistant</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Welcome to the Cannabis Chatbot</h2>
+        <p>
+          This page demonstrates the Cannabis Chatbot Widget - a 508-compliant, responsive chatbot 
+          that provides accurate information about cannabis culture, products, strains, consumption 
+          methods, and legally operating services across the United States.
+        </p>
+        <p>
+          Click the <span class="highlight">green chat button</span> in the bottom-right corner 
+          to start a conversation!
+        </p>
+      </section>
+
+      <section>
+        <h2>Key Features</h2>
+        <div class="features">
+          <div class="feature-card">
+            <div class="feature-icon">♿</div>
+            <h3>508 Compliant</h3>
+            <p>Fully accessible with keyboard navigation, screen reader support, and ARIA labels.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🗺️</div>
+            <h3>State-Specific</h3>
+            <p>Provides information tailored to your state's cannabis laws and regulations.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>RAG-Powered</h3>
+            <p>Uses vector search and AI to provide accurate, context-aware responses.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Responsive</h3>
+            <p>Works seamlessly on desktop, tablet, and mobile devices.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Age Verified</h3>
+            <p>Built-in age verification ensures compliance with 21+ requirements.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Easy Integration</h3>
+            <p>Add to any website with just a few lines of code.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>What You Can Ask</h2>
+        <p>The chatbot can help you with:</p>
+        <ul style="font-size: 18px; line-height: 2; margin-left: 40px;">
+          <li>Cannabis strains and their effects</li>
+          <li>Product types (flower, concentrates, edibles, vapes)</li>
+          <li>Consumption methods and devices</li>
+          <li>Vaporizers and dabbing equipment</li>
+          <li>Cultivation techniques and tips</li>
+          <li>Cannabis communities and resources</li>
+          <li>State-specific legal information</li>
+          <li>Harm reduction and safety guidelines</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How to Integrate</h2>
+        <p>Add the Cannabis Chatbot Widget to your website in just two steps:</p>
+        
+        <h3>Step 1: Load the Widget Script</h3>
+        <div class="code-block">
+<code><!-- Load the widget script -->
+<script src="https://your-domain.com/cannabis-chatbot-widget.js"></script></code>
+        </div>
+
+        <h3>Step 2: Initialize the Widget</h3>
+        <div class="code-block">
+<code><script>
+  CannabisChatbot.init({
+    apiUrl: 'https://your-api-domain.com/api'
+  });
+</script></code>
+        </div>
+
+        <h3>Or Use Auto-Initialization</h3>
+        <div class="code-block">
+<code><script 
+  src="https://your-domain.com/cannabis-chatbot-widget.js"
+  data-auto-init
+  data-api-url="https://your-api-domain.com/api"
+></script></code>
+        </div>
+      </section>
+
+      <section>
+        <div class="notice">
+          <p>
+            <strong>Legal Notice:</strong> This chatbot provides educational information only and 
+            is not medical advice. You must be 21 years or older to use this service. Cannabis laws 
+            vary by state - always comply with your local regulations.
+          </p>
+        </div>
+      </section>
+
+      <section style="text-align: center;">
+        <h2>Ready to Get Started?</h2>
+        <p>Click the chat button in the bottom-right corner to try it out!</p>
+        <a href="https://github.com/your-repo/cannabis-chatbot" class="cta-button" target="_blank" rel="noopener noreferrer">
+          View on GitHub
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Cannabis Chatbot Widget © 2025 | Built for education and harm reduction | 
+        <a href="#" style="color: #4CAF50;">Privacy Policy</a> | 
+        <a href="#" style="color: #4CAF50;">Terms of Service</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Cannabis Chatbot Widget Integration -->
+  <!-- In development, this points to localhost. In production, use your deployed URLs -->
+  <script>
+    // For this example, we'll simulate the widget initialization
+    // In production, you would load the actual widget script
+    
+    console.log('Cannabis Chatbot Widget Example Page');
+    console.log('To see the actual widget, run the development server:');
+    console.log('1. npm install');
+    console.log('2. npm run dev');
+    console.log('3. Open http://localhost:3000');
+    
+    // Uncomment this when running the actual widget:
+    /*
+    window.CannabisChatbot = {
+      init: function(config) {
+        console.log('Initializing Cannabis Chatbot with config:', config);
+        // Widget initialization code here
+      }
+    };
+    
+    CannabisChatbot.init({
+      apiUrl: 'http://localhost:3001/api'
+    });
+    */
+  </script>
+</body>
+</html>
