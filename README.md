@@ -138,7 +138,64 @@ MIT
 
 **Disclaimer**
 
-This chatbot provides educational information only. Always consult with healthcare professionals and comply with local laws.
+IMPORTANT: This chatbot is designed for educational purposes only. It provides general information about cannabis culture and should not be considered:
+
+Medical advice or treatment recommendations
+
+Legal advice or counsel
+
+A substitute for professional consultation
+
+An endorsement of cannabis use
+
+A platform for sales or transactions
+
+
+Users should:
+
+Consult healthcare professionals for medical questions
+
+Verify legal information with local authorities
+
+Comply with all applicable federal, state, and local laws
+
+Use cannabis responsibly and legally
+
+
+The developers and operators of this chatbot are not responsible for:
+
+User actions based on information provided
+
+Legal consequences of cannabis use
+
+Medical outcomes or health effects
+
+Accuracy of third-party information
+
+
+Support
+For issues, questions, or feature requests:
+
+Open an issue on GitHub
+Contact: richgarner71@gmail.com
+Documentation: [https://docs.yourdomain.com](https://github.com/richgarner71/BudChat)
+
+
+Acknowledgments
+
+OpenAI / Abacus.AI for LLM capabilities
+
+pgvector for vector similarity search
+
+React community for UI components
+
+Cannabis research community for educational content
+
+
+Version: 1.0.0
+Last Updated: 10/2025
+Maintained By: Rich Garner
+
 
 
 
