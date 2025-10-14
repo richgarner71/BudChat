@@ -49,31 +49,32 @@ cd ..
 cp .env.example .env
 # Edit .env with your configuration
 
-Initialize database
+**Initialize database**
 npm run init-db
-Seed knowledge base
 
+**Seed knowledge base**
 npm run seed
-Running the Application
+
+**Running the Application**
 Development mode:
 
-Terminal 1 (Backend):
+_Terminal 1 (Backend):_
 npm run dev
 
-Terminal 2 (Frontend):
+_Terminal 2 (Frontend):_
 cd client
 npm start
 
 Production mode:
 
-Build the frontend:
+**Build the frontend:**
 cd client
 npm run build
 
-Serve both:
+**Serve both:**
 npm start
 
-Embedding the Widget
+**Embedding the Widget**
 Add this script to your HTML:
 
 <script src="https://your-domain.com/embed.js"></script>
@@ -85,18 +86,18 @@ Add this script to your HTML:
   });
 </script>
 
-API Endpoints
-Chat
+**API Endpoints**
+_Chat_
 POST /api/chat/message - Send a message
 POST /api/chat/verify-age - Verify user age
 GET /api/chat/session/:sessionId - Get session history
 
-Knowledge
+_Knowledge_
 GET /api/knowledge/state/:state - Get state-specific info
 GET /api/knowledge/products - Get product information
 GET /api/knowledge/search?q=query - Search knowledge base
 
-Compliance
+**Compliance**
 This chatbot is designed for educational purposes and includes:
 
 Age verification (21+)
@@ -112,5 +113,6 @@ Adjustable text sizes
 License
 MIT
 
-Disclaimer
+**Disclaimer**
 This chatbot provides educational information only. Always consult with healthcare professionals and comply with local laws.
+
