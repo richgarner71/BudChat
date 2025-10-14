@@ -34,6 +34,83 @@ A 508-compliant, responsive web widget chatbot focused on cannabis culture and s
 ### Installation
 
 1. **Clone the repository**
-```bash
 git clone <your-repo-url>
 cd cannabis-chatbot
+
+**Install backend dependencies**
+npm install
+
+**Install frontend dependencies**
+cd client
+npm install
+cd ..
+
+**Configure environment variables**
+cp .env.example .env
+# Edit .env with your configuration
+
+Initialize database
+npm run init-db
+Seed knowledge base
+
+npm run seed
+Running the Application
+Development mode:
+
+Terminal 1 (Backend):
+npm run dev
+
+Terminal 2 (Frontend):
+cd client
+npm start
+
+Production mode:
+
+Build the frontend:
+cd client
+npm run build
+
+Serve both:
+npm start
+
+Embedding the Widget
+Add this script to your HTML:
+
+<script src="https://your-domain.com/embed.js"></script>
+<script>
+  CannabisChat.init({
+    apiUrl: 'https://your-api-domain.com',
+    position: 'bottom-right',
+    primaryColor: '#10b981'
+  });
+</script>
+
+API Endpoints
+Chat
+POST /api/chat/message - Send a message
+POST /api/chat/verify-age - Verify user age
+GET /api/chat/session/:sessionId - Get session history
+
+Knowledge
+GET /api/knowledge/state/:state - Get state-specific info
+GET /api/knowledge/products - Get product information
+GET /api/knowledge/search?q=query - Search knowledge base
+
+Compliance
+This chatbot is designed for educational purposes and includes:
+
+Age verification (21+)
+State-specific legal information
+Medical disclaimers
+No direct sales or transactions
+Accessibility
+WCAG 2.1 AA compliant
+Keyboard navigation support
+Screen reader compatible
+High contrast mode
+Adjustable text sizes
+License
+MIT
+
+Disclaimer
+This chatbot provides educational information only. Always consult with healthcare professionals and comply with local laws.
