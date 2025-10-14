@@ -31,7 +31,7 @@ A 508-compliant, responsive web widget chatbot focused on cannabis culture and s
 - PostgreSQL 14+ with pgvector extension
 - OpenAI API key or RouteLLM API key
 
-### Installation
+## Installation
 
 **1. Clone the repository**
 
@@ -95,7 +95,7 @@ Add this script to your HTML:
   });
 </script>
 
-**API Endpoints**
+##API Endpoints
 
 _Chat_
 POST /api/chat/message - Send a message
@@ -107,7 +107,7 @@ GET /api/knowledge/state/:state - Get state-specific info
 GET /api/knowledge/products - Get product information
 GET /api/knowledge/search?q=query - Search knowledge base
 
-**Compliance**
+##Compliance
 
 This chatbot is designed for educational purposes and includes:
 
@@ -127,6 +127,7 @@ MIT
 **Disclaimer**
 
 This chatbot provides educational information only. Always consult with healthcare professionals and comply with local laws.
+
 
 
 
