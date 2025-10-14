@@ -34,28 +34,35 @@ A 508-compliant, responsive web widget chatbot focused on cannabis culture and s
 ### Installation
 
 **1. Clone the repository**
+
 git clone <your-repo-url>
 cd cannabis-chatbot
 
 **2. Install backend dependencies**
+
 npm install
 
 **3. Install frontend dependencies**
+
 cd client
 npm install
 cd ..
 
 **4. Configure environment variables**
+
 cp .env.example .env
 (Edit .env with your configuration)
 
 **5. Initialize database**
+
 npm run init-db
 
 **6. Seed knowledge base**
+
 npm run seed
 
 **7. Running the Application**
+
 Development mode:
 
 _Terminal 1 (Backend):_
@@ -68,6 +75,7 @@ npm start
 Production mode:
 
 **8. Build the frontend:**
+
 cd client
 npm run build
 
@@ -75,6 +83,7 @@ npm run build
 npm start
 
 **10. Embedding the Widget**
+
 Add this script to your HTML:
 
 <script src="https://your-domain.com/embed.js"></script>
@@ -87,6 +96,7 @@ Add this script to your HTML:
 </script>
 
 **API Endpoints**
+
 _Chat_
 POST /api/chat/message - Send a message
 POST /api/chat/verify-age - Verify user age
@@ -98,6 +108,7 @@ GET /api/knowledge/products - Get product information
 GET /api/knowledge/search?q=query - Search knowledge base
 
 **Compliance**
+
 This chatbot is designed for educational purposes and includes:
 
 Age verification (21+)
@@ -114,6 +125,8 @@ License
 MIT
 
 **Disclaimer**
+
 This chatbot provides educational information only. Always consult with healthcare professionals and comply with local laws.
+
 
 
