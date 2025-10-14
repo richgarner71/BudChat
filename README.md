@@ -33,29 +33,29 @@ A 508-compliant, responsive web widget chatbot focused on cannabis culture and s
 
 ### Installation
 
-1. **Clone the repository**
+**1. Clone the repository**
 git clone <your-repo-url>
 cd cannabis-chatbot
 
-**Install backend dependencies**
+**2. Install backend dependencies**
 npm install
 
-**Install frontend dependencies**
+**3. Install frontend dependencies**
 cd client
 npm install
 cd ..
 
-**Configure environment variables**
+**4. Configure environment variables**
 cp .env.example .env
-# Edit .env with your configuration
+(Edit .env with your configuration)
 
-**Initialize database**
+**5. Initialize database**
 npm run init-db
 
-**Seed knowledge base**
+**6. Seed knowledge base**
 npm run seed
 
-**Running the Application**
+**7. Running the Application**
 Development mode:
 
 _Terminal 1 (Backend):_
@@ -67,14 +67,14 @@ npm start
 
 Production mode:
 
-**Build the frontend:**
+**8. Build the frontend:**
 cd client
 npm run build
 
-**Serve both:**
+**9. Serve both:**
 npm start
 
-**Embedding the Widget**
+**10. Embedding the Widget**
 Add this script to your HTML:
 
 <script src="https://your-domain.com/embed.js"></script>
@@ -115,4 +115,5 @@ MIT
 
 **Disclaimer**
 This chatbot provides educational information only. Always consult with healthcare professionals and comply with local laws.
+
 
