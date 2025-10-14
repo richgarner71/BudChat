@@ -85,7 +85,8 @@ npm start
 **10. Embedding the Widget**
 
 Add this script to your HTML:
-'''html
+'''
+html
 <script src="https://your-domain.com/embed.js"></script>
 <script>
   CannabisChat.init({
@@ -128,6 +129,7 @@ MIT
 **Disclaimer**
 
 This chatbot provides educational information only. Always consult with healthcare professionals and comply with local laws.
+
 
 
 
