@@ -101,35 +101,45 @@ Add this script to your HTML:
 ##API Endpoints
 
 _Chat_
+
 POST /api/chat/message - Send a message
+
 POST /api/chat/verify-age - Verify user age
+
 GET /api/chat/session/:sessionId - Get session history
 
+
+
 _Knowledge_
+
 GET /api/knowledge/state/:state - Get state-specific info
+
 GET /api/knowledge/products - Get product information
+
 GET /api/knowledge/search?q=query - Search knowledge base
+
 
 ##Compliance
 
 This chatbot is designed for educational purposes and includes:
 
-Age verification (21+)
-State-specific legal information
-Medical disclaimers
-No direct sales or transactions
-Accessibility
-WCAG 2.1 AA compliant
-Keyboard navigation support
-Screen reader compatible
-High contrast mode
-Adjustable text sizes
-License
+Age verification (21+), 
+State-specific legal information, 
+Medical disclaimers, 
+No direct sales or transactions, 
+Accessibility, 
+WCAG 2.1 AA compliant, 
+Keyboard navigation support, 
+Screen reader compatible, 
+High contrast mode, 
+Adjustable text sizes, 
+License, 
 MIT
 
 **Disclaimer**
 
 This chatbot provides educational information only. Always consult with healthcare professionals and comply with local laws.
+
 
 
 
